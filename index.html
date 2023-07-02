@@ -1,0 +1,91 @@
+<html>
+
+<head>
+   <title>coordinate thing</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="">
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-468WTPQTNR');
+   </script>
+</head>
+
+<style>
+   #map {
+      height: 100%;
+      width: 100%;
+      position: absolute
+   }
+
+   .forma {
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      z-index: 99999;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      text-align: center;
+   }
+
+   .forma2 {
+      position: absolute;
+      top: 100px;
+      right: 10px;
+      z-index: 99999;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      text-align: center;
+      width: 200px;
+      height: 100vh;
+   }
+
+   .forma label {
+      color: #fff;
+      text-shadow: 0 0 5px #000;
+   }
+
+   .forma input {
+      display: block;
+   }
+
+   .btn {
+      display: block;
+      margin: 10px auto 0 auto;
+      padding: 5px 10px;
+      text-transform: uppercase;
+   }
+</style>
+
+<body style="margin: 0">
+   <form action="" method="post" class="forma" id="formular">
+      <label for="xinput">X Position:</label>
+      <input type="text" id="xinput" name="xpoz">
+      <label for="yinput">Y Position:</label>
+      <input type="text" id="yinput" name="ypoz">
+      <input type="submit" name="submit" value="Find" class="btn"><br>
+
+   </form>
+   <div id="map"></div>
+   <script src="scripts/script.js"></script>
+   <div id="markerSkripta"></div>
+
+</body>
+
+</html>
+
+
+
+<input id="lat">
+<input id="lng">
